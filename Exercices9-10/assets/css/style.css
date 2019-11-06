@@ -1,0 +1,24 @@
+.identityFieldset {
+    background-color: blue;
+}
+.deliveryFieldset {
+    background-color: violet;
+}
+.paymentFieldset {
+    background-color: pink;
+}
+/* je commence par donner une taille par défaut à mon image */
+#responsiveImg {
+    width: 50%;
+}
+
+/* Dans un premier temps je déclare qu'il s'agit d'une condition CSS en tapant @media */
+/* Puis je dis que cette media query s'appliquera sur tous les formats disponibles grâce au mot clé all */
+/* Je précise ensuite quel format sera touché par ma media query en complétant mon all par and (max-width: 600px), ceci veut donc dire que la media query s'appliquera à tous les formats qui ont une largeur de moins de 600 pixels */
+@media all and (max-width: 600px) {
+    /* je rappelle ensuite l'id à modifier */
+    #responsiveImg {
+        /* et je change la valeur qui m'intéresse */
+        width: 100%;
+    }
+}
